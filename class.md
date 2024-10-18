@@ -1,76 +1,74 @@
 ```mermaid
+
 classDiagram
-    class Projet_Education_Numerique {
-        - Définition des objectifs pédagogiques
-        - Identification des acteurs
-        - Contenu pédagogique
-        - Choix des outils numériques
-        - Suivi et évaluation
-        - Accessibilité et inclusion
-        - Évaluation du projet
-    }
+    class Utilisateur
+    Utilisateur <|-- Personne
+    Utilisateur <|-- Service
+    Utilisateur : +Int id
 
-    class Objectifs_Pédagogiques {
-        + Amélioration des compétences numériques
-        + Personnalisation de l'apprentissage
-        + Développement de compétences collaboratives et créatives
-    }
+    class Personne
+    Personne --|> Étudiant
+    Personne --|>Enseignant
+    Personne : +Int id
+    Personne : +String nom
+    Personne : +String prénom
+    Personne : +String mail
+    Personne : +String num_tel
+    
+    class Étudiant
+    Étudiant : +Int id
+    Étudiant : +Int num_etu
 
-    class Acteurs {
-        + Enseignants
-        + Étudiants
-        + Institutions éducatives
-        + Concepteurs de contenus numériques
-        + Autorités éducatives
-    }
+    class Enseignant 
+    Enseignant : +Int id
+    Enseignant : +String formation 
+    Enseignant : +Int id_cours
 
-    class Contenu_Pédagogique {
-        + Plateformes de e-learning
-        + Tâches collaboratives
-    }
+    class Service 
+    Service <|-- Administratif
+    Service <|-- Pédagogique
+    Service : +Int id
+    
+    class Administratif 
+    Administratif : +Int id
+    Administratif : +String nom_service
+    Administratif : +Int id_batiment 
+    Administratif : +String mail
+    Administratif : +Int num_tel
+ 
+    class Pédagogique
+    Pédagogique : +Int id
+    Pédagogique : +String nom_service
+    Pédagogique : +Int id_batiment 
+    Pédagogique : +String mail 
+    Pédagogique : +Int num_tel 
 
-    class Outils_Numeriques {
-        + Plateformes d'apprentissage en ligne pour le supérieur
-    }
+    class Concepteur
+    Concepteur : +Int id
+    Concepteur : +String nom
+    Concepteur : +Int id_batiment
+    Concepteur : +String mail 
+    
+    class OutilNumérique 
+    OutilNumérique --> Utilisateur : utilisé par
+    OutilNumérique --> Concepteur: conçu par
+    OutilNumérique : +String nom
+    OutilNumérique : +String description
 
-    class Suivi_Evaluation {
-        + Outils de suivi de performance
-        + Évaluations numériques
-    }
+    class Cours
+    Cours : +Int id
+    Cours : +String nom_cours
 
-    class Accessibilité_Inclusion {
-        + Sous-titres et outils de transcription pour malentendants
-        + Options d’agrandissement et lecture vocale pour malvoyants
-    }
+    class Batiment
+    Batiment : +Int id
+    Batiment : +String nom
 
-    class Evaluation_Projet {
-        + Enquêtes satisfaction étudiants et enseignants
-        + Analyse des résultats académiques et compétences numériques
-    }
+    class Bureau
+    Bureau --> Batiment : est dans
+    Bureau : +String num
 
-    Projet_Education_Numerique --> Objectifs_Pédagogiques
-    Projet_Education_Numerique --> Acteurs
-    Projet_Education_Numerique --> Contenu_Pédagogique
-    Projet_Education_Numerique --> Outils_Numeriques
-    Projet_Education_Numerique --> Suivi_Evaluation
-    Projet_Education_Numerique --> Accessibilité_Inclusion
-    Projet_Education_Numerique --> Evaluation_Projet
+    Cours --> Enseignant : donné par
 
-    Acteurs --> Enseignants : contient
-    Acteurs --> Étudiants : contient
-    Acteurs --> Institutions_educatives : contient
-    Acteurs --> Concepteurs_de_contenus_numériques : contient
-    Acteurs --> Autorités_educatives : contient
-
-    Contenu_Pédagogique --> Plateformes_de_e-learning : contient
-    Contenu_Pédagogique --> Tâches_collaboratives : contient
-
-    Suivi_Evaluation --> Outils_suivi_performance : contient
-    Suivi_Evaluation --> Evaluations_numeriques : contient
-
-    Accessibilité_Inclusion --> Sous_titres_transcription : contient
-    Accessibilité_Inclusion --> Options_lecture_vocale : contient
-
-    Evaluation_Projet --> Enquêtes_satisfaction : contient
-    Evaluation_Projet --> Analyse_resultats_academiques : contient
+ 
 ```
+
