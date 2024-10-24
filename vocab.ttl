@@ -65,8 +65,62 @@ num:hasConcepteur a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+num:hasOutilNumerique a rdf:Property ;
+    rdfs:label "à comme outil numérique" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 num:hasCours a rdf:Property ;
     rdfs:label "à comme cours" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+num:id as rdf: Property
+    rdfs:label "identifiant";
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+num:nom as rdf: Property
+    rdfs:label "nom";
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+num:prenom as rdf: Property
+    rdfs:label "prénom";
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+num:mail a rdf:Property ;
+    rdfs:domain o:Resource ;
+    rdfs:label "adresse mail" ;
+    vs:term_status "experimental" .
+
+num:num_tel rdf:Property ;
+    rdfs:domain o:Resource ;
+    rdfs:label "Numéro de téléphone" ;
+    vs:term_status "experimental" .
+
+num:num_etu a rdf:Property ;
+    rdfs:domain o:Resource ;
+    rdfs:label "Numéro étudiant" ;
+    vs:term_status "experimental" .
+
+num:formation a rdf:Property ;
+    rdfs:domain o:Resource ;
+    rdfs:label "Formation" ;
+    vs:term_status "experimental" .
+
+num:id_cours a rdf:Property ;
+    rdfs:domain o:Resource ;
+    rdfs:label "Identifiant Cours" ;
+    vs:term_status "experimental" .
+
+num:nom_cours a rdf:Property ;
+    rdfs:domain o:Resource ;
+    rdfs:label "Nom du cours" ;
+    vs:term_status "experimental" .
+
+num:nom_service a rdf:Property ;
+    rdfs:domain o:Resource ;
+    rdfs:label "Nom du service" ;
+    vs:term_status "experimental" .
