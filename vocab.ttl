@@ -55,6 +55,21 @@ num:Cours a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+num:hasUtilisateur a rdf:Property ;
+    rdfs:label "à comme utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+num:hasConcepteur a rdf:Property ;
+    rdfs:label "à comme concepteur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+num:hasCours a rdf:Property ;
+    rdfs:label "à comme cours" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 num:hasId as rdf: Property
     rdfs:label "a comme identifiant";
     rdfs:domain :Utilisateur, :Personne, :Etudiant, :Enseignant, :ServicePedagogique, :Concepteur, :Cours, :Batiment ;
