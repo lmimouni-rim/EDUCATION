@@ -24,16 +24,13 @@ classDiagram
     Enseignant : +String formation 
     Enseignant : +Int id_cours
 
-    class Service 
-    Service <|-- Pédagogique
-    Service : +Int id
  
-    class Pédagogique
-    Pédagogique : +Int id
-    Pédagogique : +String nom_service
-    Pédagogique : +Int id_batiment 
-    Pédagogique : +String mail 
-    Pédagogique : +Int num_tel 
+    class ServicePedagogique
+    ServicePedagogique : +Int id
+    ServicePedagogique : +String nom_service
+    ServicePedagogique : +Int id_batiment 
+    ServicePedagogique : +String mail 
+    ServicePedagogique : +Int num_tel 
 
     class Concepteur
     Concepteur : +Int id
