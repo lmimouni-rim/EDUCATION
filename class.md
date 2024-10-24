@@ -25,7 +25,6 @@ classDiagram
     Enseignant : +Int id_cours
 
     class Service 
-    Service <|-- Administratif
     Service <|-- Pédagogique
     Service : +Int id
  
