@@ -3,7 +3,7 @@
 classDiagram
     class Utilisateur
     Utilisateur <|-- Personne
-    Utilisateur <|-- Service
+    Utilisateur <|-- ServicePedagogique
     Utilisateur : +Int id
 
     class Personne
