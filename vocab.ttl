@@ -5,7 +5,7 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
 @prefix num: <https://jardindesconnaissances.univ-paris8.fr/onto/num#> .
 
 <https://jardindesconnaissances.univ-paris8.fr/onto/num#> a owl:Ontology ;
@@ -29,25 +29,25 @@ num:Utilisateur a rdfs:Class ;
 num:Personne a rdfs:Class ;
     rdfs:label "Personne" ;
     rdfs:domain o:Resource ;
-    rdfs: subClassOf : Utilisateur ;
+    rdfs:subClassOf num:Utilisateur ;
     vs:term_status "experimental" .
 
 num:Etudiant a rdfs:Class ;
     rdfs:label "Etudiant" ;
     rdfs:domain o:Resource ;
-    rdfs: subClass of : Personne
+    rdfs:subClassOf num:Personne ;
     vs:term_status "experimental" .
 
 num:Enseignant a rdfs:Class ;
     rdfs:label "Enseignant" ;
     rdfs:domain o:Resource ;
-    rdfs: subClass of : Personne
+    rdfs:subClassOf num:Personne ;
     vs:term_status "experimental" .
 
 num:ServicePedagogique a rdfs:Class ;
     rdfs:label "ServicePedagogique" ;
     rdfs:domain o:Resource ;
-    rdfs: subClassOf : Utilisateur ;
+    rdfs:subClassOf num:Utilisateur ;
     vs:term_status "experimental" .
 
 num:Cours a rdfs:Class ;
@@ -75,18 +75,18 @@ num:hasCours a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-num:id as rdf: Property
-    rdfs:label "identifiant";
+num:id a rdf:Property ;
+    rdfs:label "identifiant" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-num:nom as rdf: Property
-    rdfs:label "nom";
+num:nom a rdf:Property ;
+    rdfs:label "nom" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-num:prenom as rdf: Property
-    rdfs:label "prénom";
+num:prenom a rdf:Property ;
+    rdfs:label "prénom" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
@@ -95,7 +95,7 @@ num:mail a rdf:Property ;
     rdfs:label "adresse mail" ;
     vs:term_status "experimental" .
 
-num:num_tel rdf:Property ;
+num:num_tel a rdf:Property ;
     rdfs:domain o:Resource ;
     rdfs:label "Numéro de téléphone" ;
     vs:term_status "experimental" .
