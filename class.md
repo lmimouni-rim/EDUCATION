@@ -28,13 +28,6 @@ classDiagram
     Service <|-- Administratif
     Service <|-- Pédagogique
     Service : +Int id
-    
-    class Administratif 
-    Administratif : +Int id
-    Administratif : +String nom_service
-    Administratif : +Int id_batiment 
-    Administratif : +String mail
-    Administratif : +Int num_tel
  
     class Pédagogique
     Pédagogique : +Int id
