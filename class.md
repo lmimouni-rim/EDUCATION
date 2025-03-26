@@ -1,7 +1,8 @@
 ```mermaid
-direction LR
 
 classDiagram
+direction LR
+
 
     
     class Étudiant
