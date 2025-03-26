@@ -28,5 +28,6 @@ classDiagram
     Enseignant --> Étudiant : échange
     Étudiant "N" --> "N" Collaboration : participe à
     Collaboration "1" --> "N" Étudiant_Collaboration : relie
-    Étudiant "1" --> "N" Étudiant_Collaboration : appartient 
+    Étudiant "1" --> "N" Étudiant_Collaboration : appartient
+
 ```
