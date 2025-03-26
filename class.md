@@ -57,7 +57,7 @@ classDiagram
     Bureau : +String num
 
     Cours --> Enseignant : donné par
-    Enseignant --> Etudiant : transmission ascendante
+    Enseignant --> Étudiant : transmission ascendante
 
  
 ```
