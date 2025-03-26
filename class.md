@@ -21,8 +21,8 @@ classDiagram
     Collaboration : +String type_collaboration
 
     class Étudiant_collab
-    Étudiant : +Int id_etu
-    Étudiant : +Int id_collab
+    Étudiant_collab : +Int id_etu
+    Étudiant_collab : +Int id_collab
 
     Cours --> Enseignant : introduit par 
     Enseignant --> Étudiant : échange
