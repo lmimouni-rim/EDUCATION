@@ -1,6 +1,7 @@
 ```mermaid
 
 classDiagram
+direction LR
     
     class Étudiant
     Étudiant : +Int id
