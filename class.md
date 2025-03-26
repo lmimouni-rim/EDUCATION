@@ -27,7 +27,7 @@ classDiagram
     Cours --> Enseignant : introduit par 
     Enseignant --> Étudiant : échange
     Étudiant "N" --> "N" Collaboration : participe à
-    Collaboration "1" --> "N" Étudiant_Collab : relie
-    Étudiant "1" --> "N" Étudiant_Collab : appartient
+    Collaboration "1" --> "N" Étudiant_collab : relie
+    Étudiant "1" --> "N" Étudiant_collab : appartient
 
 ```
