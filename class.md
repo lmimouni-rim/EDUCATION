@@ -1,4 +1,4 @@
-mermaid
+```mermaid
 
 classDiagram
     
@@ -18,3 +18,4 @@ classDiagram
     Cours --> Enseignant : introduit par 
     Enseignant --> Étudiant : collaboration
     Étudiant --> Étudiant : collaboration
+```
