@@ -1,3 +1,5 @@
+```mermaid
+
 classDiagram
     
     class Étudiant {
@@ -26,3 +28,5 @@ classDiagram
     Cours --> Enseignant : introduit par 
     Enseignant --> Étudiant : échange
     Étudiant <---> Collaboration : participe à
+
+```
