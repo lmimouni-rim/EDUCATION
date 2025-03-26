@@ -1,7 +1,7 @@
 ```mermaid
 
 classDiagram
-direction LR
+
     
     class Étudiant
     Étudiant : +Int id
@@ -17,18 +17,7 @@ direction LR
     Cours : +String nom_cours
 
 
-    class Collaboration 
-    Collaboration : +Int id
-    Collaboration : +String type_collaboration
-
-    class Étudiant_collab
-    Étudiant_collab : +Int id_etu
-    Étudiant_collab : +Int id_collab
-
-    Cours --> Enseignant : introduit par 
-    Enseignant --> Étudiant : échange
-    Étudiant "N" --> "N" Collaboration : participe à
-    Collaboration "1" --> "N" Étudiant_collab : relie
-    Étudiant "1" --> "N" Étudiant_collab : appartient
+    Cours --> Enseignant : donné par
+    Enseignant --> Étudiant : transmission ascendante
 
 ```
