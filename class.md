@@ -18,12 +18,15 @@ classDiagram
 
     class Collaboration 
     Collaboration : +Int id
-    Collaboration : +Int id_etudiant1
-    Collaboration : +Int id_etudiant2
     Collaboration : +String type_collaboration
 
+    class Étudiant_collab
+    Étudiant : +Int id_etu
+    Étudiant : +Int id_collab
 
     Cours --> Enseignant : introduit par 
     Enseignant --> Étudiant : échange
-    Étudiant --> Collaboration  : participe à
+    Étudiant "N" --> "N" Collaboration : participe à
+    Collaboration "1" --> "N" Étudiant_Collaboration : relie
+    Étudiant "1" --> "N" Étudiant_Collaboration : appartient 
 ```
