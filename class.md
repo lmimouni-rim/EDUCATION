@@ -15,7 +15,15 @@ classDiagram
     Cours : +Int id
     Cours : +String nom_cours
 
+
+    class Collaboration 
+    Collaboration : +Int id
+    Collaboration : +Int id_etudiant1
+    Collaboration : +Int id_etudiant2
+    Collaboration : +String type_collaboration
+
+
     Cours --> Enseignant : introduit par 
-    Enseignant --> Étudiant : collaboration
-    Étudiant --> Étudiant : collaboration
+    Enseignant --> Étudiant : échange
+    Étudiant --> Collaboration  : participe à
 ```
