@@ -15,8 +15,9 @@ classDiagram
     Cours : +Int id
     Cours : +String nom_cours
 
-    Cours --> Enseignant : donné par
-    Enseignant --> Étudiant : transmission ascendante
+    Cours --> Enseignant : introduit par 
+    Enseignant --> Étudiant : collaboration
+    Étudiant --> Étudiant : collaboration
 
  
 ```
