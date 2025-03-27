@@ -20,6 +20,6 @@ direction LR
 
 
     Cours --> Enseignant : donné par
-    Enseignant --> Étudiant : transmission ascendante
+    Enseignant --> Étudiant : transmission descendante
 
 ```
